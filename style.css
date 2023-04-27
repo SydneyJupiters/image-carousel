@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+#carousel {
+  display: flex;
+  height: 500px;
+  margin-top: 40px;
+  overflow: hidden;
+  position: relative;
+  width: 700px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+li {
+  height: 500px;
+  width: 700px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.fa {
+  color: #fff;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.fa:hover {
+  opacity: 1;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  line-height: 40px;
+  position: absolute;
+  top: calc(50% - 40px / 2);
+}
+
+.fa-chevron-right {
+  right: 0%;
+}
+
+.cta-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template: 1fr 1fr / 30% 30% 30%;
+  row-gap: 40px;
+  column-gap: 20px;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+.cta-block {
+  min-width: 200px;
+  height: 100px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-block a {
+  cursor: pointer;
+}
